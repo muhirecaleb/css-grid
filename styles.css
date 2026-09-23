@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container div {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    text-wrap: nowrap;
+  padding: 50px;
+  width: 100%;
+
+}
+
+.grid-container {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit , minmax(100px , 1fr));
+    grid-gap: 10px 20px;
+   place-content: center;
+}
+
+.box3 {
+    grid-column: 3 / 5;
+}
